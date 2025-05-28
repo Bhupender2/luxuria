@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Luxuria",
+  title: "Luxuriayyy",
   description: "Curated Luxury gifts , Delivered with love",
 };
 
