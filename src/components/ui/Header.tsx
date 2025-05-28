@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="border-b">
+    <header className="bg-warmdark border-b">
       <div className="container mx-auto px-4 py-2">
         <div className="flex justify-around">
           <div>
