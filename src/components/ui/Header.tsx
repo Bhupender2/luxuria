@@ -4,13 +4,16 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <header className="border-b">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex justify-around">
-          <div>logo</div>
+          <div>
+            <Image src="/Logo.png" width={150} height={200} alt="logo image" />
+          </div>
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
