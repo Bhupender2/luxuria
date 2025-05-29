@@ -58,9 +58,9 @@ export default function Header() {
                 <Menu size={24} className="text-warmdark" />
               </button>
             </SheetTrigger>
-            <SheetContent className="bg-white/90 backdrop-blur-md">
+            <SheetContent className="bg-white/90 backdrop-blur-md" side="right">
               <NavigationMenu>
-                <NavigationMenuList>
+                <NavigationMenuList className="flex flex-col items-start space-y-2">
                   <NavigationMenuItem>
                     <NavigationMenuLink className="hover:text-warmdark cursor-pointer text-gray-700 transition-colors duration-200 hover:font-bold">
                       Home
