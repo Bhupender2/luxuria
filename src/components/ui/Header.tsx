@@ -6,16 +6,10 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Menu, X } from "lucide-react";
+import { Contact, Home, Menu, ShoppingBag, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -93,7 +87,10 @@ export default function Header() {
                         className="hover:text-warmdark block w-full cursor-pointer rounded-lg p-3 text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:font-bold"
                         onClick={() => setIsOpen(false)}
                       >
-                        Home
+                        <div className="flex items-center justify-around gap-4">
+                          {" "}
+                          <Home /> <span>Home</span>
+                        </div>
                       </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className="w-full">
@@ -101,7 +98,10 @@ export default function Header() {
                         className="hover:text-warmdark block w-full cursor-pointer rounded-lg p-3 text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:font-bold"
                         onClick={() => setIsOpen(false)}
                       >
-                        Shop
+                        <div className="flex items-center justify-around gap-4">
+                          {" "}
+                          <ShoppingBag /> <span>Shop</span>
+                        </div>
                       </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className="w-full">
@@ -109,7 +109,10 @@ export default function Header() {
                         className="hover:text-warmdark block w-full cursor-pointer rounded-lg p-3 text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:font-bold"
                         onClick={() => setIsOpen(false)}
                       >
-                        Contact
+                        <div className="flex items-center justify-around gap-4">
+                          {" "}
+                          <Contact /> <span>Contact</span>
+                        </div>
                       </NavigationMenuLink>
                     </NavigationMenuItem>
                   </NavigationMenuList>
