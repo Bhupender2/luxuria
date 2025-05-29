@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50">
+    <div className="relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-20 left-10 h-32 w-32 rounded-full bg-amber-200/20 blur-xl"></div>
       <div className="absolute right-10 bottom-20 h-40 w-40 rounded-full bg-rose-200/20 blur-xl"></div>
@@ -85,8 +85,8 @@ const HeroSection = () => {
                 <Image
                   src="/luxuriabg.png"
                   alt="Luxury gifts and home decor collection"
-                  height={500}
-                  width={500}
+                  height={300}
+                  width={400}
                   className="rounded-2xl shadow-2xl"
                   priority
                 />

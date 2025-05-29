@@ -25,7 +25,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-white/95 font-semibold shadow-sm backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 font-semibold shadow-sm backdrop-blur-md">
       <div className="container mx-auto max-w-7xl px-4 py-3">
         {/* Desktop Version */}
         <div className="hidden items-center justify-between md:flex">

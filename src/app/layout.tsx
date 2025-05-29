@@ -20,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-[#FAF8F6] antialiased`}>
+      <body
+        className={`${poppins.className} bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 antialiased`}
+      >
         <Header />
         {children}
       </body>
