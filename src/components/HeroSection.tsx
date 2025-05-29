@@ -16,7 +16,7 @@ const HeroSection = () => {
         <Image
           src="/luxuriabg.png"
           alt="background_img"
-          height={100}
+          height={400}
           width={400}
         />
       </div>

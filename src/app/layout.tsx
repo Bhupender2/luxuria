@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/ui/Header";
+import Header from "@/components/Header";
 
 const poppins = Montserrat({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
