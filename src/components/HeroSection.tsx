@@ -95,19 +95,19 @@ const HeroSection = () => {
               </div>
 
               {/* Floating elements */}
-              <div className="absolute -top-6 -left-6 z-20 rounded-2xl border border-gray-100 bg-white p-4 shadow-lg">
+              <div className="absolute -top-6 -left-3 z-20 rounded-2xl border border-gray-100 bg-white p-4 shadow-lg lg:-left-6">
                 <div className="flex items-center gap-2">
                   <div className="h-3 w-3 animate-pulse rounded-full bg-green-500"></div>
-                  <span className="text-sm font-medium text-gray-700">
+                  <span className="text-xs font-medium text-gray-700 lg:text-sm">
                     Free Shipping
                   </span>
                 </div>
               </div>
 
-              <div className="absolute -right-6 -bottom-6 z-20 rounded-2xl border border-gray-100 bg-white p-4 shadow-lg">
+              <div className="absolute -right-2 -bottom-6 z-20 rounded-2xl border border-gray-100 bg-white p-4 shadow-lg lg:-right-6">
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">🎁</span>
-                  <span className="text-sm font-medium text-gray-700">
+                  <span className="text-lg lg:text-2xl">🎁</span>
+                  <span className="text-xs font-medium text-gray-700 lg:text-sm">
                     Gift Wrapped
                   </span>
                 </div>
