@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-warmdark border-b">
+    <header className="border-b">
       <div className="container mx-auto px-4 py-2">
         <div className="flex justify-around">
           <div>
@@ -17,13 +17,19 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuLink>Home</NavigationMenuLink>
+                <NavigationMenuLink className="hover:text-warmdark cursor-pointer text-gray-700 transition-colors duration-200 hover:font-bold">
+                  Home
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink>Shop</NavigationMenuLink>
+                <NavigationMenuLink className="hover:text-warmdark cursor-pointer text-gray-700 transition-colors duration-200 hover:font-bold">
+                  Shop
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink>Contact</NavigationMenuLink>
+                <NavigationMenuLink className="hover:text-warmdark cursor-pointer text-gray-700 transition-colors duration-200 hover:font-bold">
+                  Contact
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
