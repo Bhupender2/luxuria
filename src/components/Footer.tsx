@@ -6,7 +6,6 @@ import {
   Mail,
   Phone,
   MapPin,
-  Heart,
 } from "lucide-react";
 import { Button } from "./ui/button";
 
