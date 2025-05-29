@@ -81,8 +81,10 @@ const Products = () => {
   return (
     <div className="container mx-auto max-w-7xl px-4 py-12">
       <div className="text-warmdark mb-12 text-center">
-        <h2 className="mb-4 text-5xl font-bold">Our Best Sellers</h2>
-        <p className="mx-auto max-w-2xl text-lg text-gray-600">
+        <h2 className="mb-4 text-3xl font-bold md:text-4xl lg:text-5xl">
+          Our Best Sellers
+        </h2>
+        <p className="mx-auto max-w-2xl text-sm text-gray-600 md:text-base lg:text-lg">
           Discover our most loved home decor pieces, carefully curated to bring
           elegance and style to your living space
         </p>
@@ -107,18 +109,18 @@ const Products = () => {
             </CardHeader>
 
             <CardContent>
-              <CardTitle className="group-hover:text-warmdark mb-2 text-xl font-semibold text-gray-800 transition-colors">
+              <CardTitle className="group-hover:text-warmdark mb-2 text-base font-semibold text-gray-800 transition-colors md:text-lg lg:text-xl">
                 {product.name}
               </CardTitle>
-              <CardDescription className="mb-2 line-clamp-2 text-gray-600">
+              <CardDescription className="mb-2 line-clamp-2 text-xs text-gray-600 lg:text-sm">
                 {product.description}
               </CardDescription>
 
               <div className="flex items-center gap-2">
-                <span className="text-warmdark text-xl font-bold">
+                <span className="text-warmdark text-base font-bold lg:text-xl">
                   {product.price}
                 </span>
-                <span className="text-sm text-gray-400 line-through">
+                <span className="text-xs text-gray-400 line-through lg:text-sm">
                   {product.originalPrice}
                 </span>
                 <span className="rounded bg-green-100 px-2 py-1 text-xs font-medium text-green-800">
@@ -135,7 +137,7 @@ const Products = () => {
             </CardContent>
 
             <CardFooter>
-              <div className="w-full space-y-3">
+              <div className="w-full space-y-3 text-xs lg:text-sm">
                 <Button className="bg-warmdark hover:bg-warmdark/90 w-full rounded-lg py-3 font-semibold text-white transition-all duration-300 hover:shadow-lg">
                   Add to Cart
                 </Button>

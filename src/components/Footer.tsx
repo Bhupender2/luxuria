@@ -12,7 +12,7 @@ import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-200">
+    <footer className="border-t border-gray-300">
       {/* Main Footer Content */}
       <div className="container mx-auto max-w-7xl px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -25,7 +25,7 @@ const Footer = () => {
               alt="Luxuria Logo"
               className="mb-4"
             />
-            <p className="text-sm leading-relaxed text-gray-600">
+            <p className="text-xs leading-relaxed text-gray-600 lg:text-sm">
               Curating luxury gifts and home decor pieces that speak to the
               heart. Each item is handpicked to create moments of joy and
               lasting memories.
@@ -57,12 +57,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-warmdark text-lg font-semibold">Quick Links</h3>
+            <h3 className="text-warmdark text-sm font-semibold lg:text-lg">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   Home
                 </a>
@@ -70,7 +72,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   Shop All Products
                 </a>
@@ -78,7 +80,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   Best Sellers
                 </a>
@@ -86,7 +88,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   Gift Collections
                 </a>
@@ -94,7 +96,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   About Us
                 </a>
@@ -104,14 +106,14 @@ const Footer = () => {
 
           {/* Customer Care */}
           <div className="space-y-4">
-            <h3 className="text-warmdark text-lg font-semibold">
+            <h3 className="text-warmdark text-sm font-semibold lg:text-lg">
               Customer Care
             </h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   Contact Us
                 </a>
@@ -119,7 +121,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   Shipping Info
                 </a>
@@ -127,7 +129,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   Returns & Exchanges
                 </a>
@@ -135,7 +137,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   Size Guide
                 </a>
@@ -143,7 +145,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-warmdark text-sm text-gray-600 transition-colors"
+                  className="hover:text-warmdark text-xs text-gray-600 transition-colors lg:text-sm"
                 >
                   Care Instructions
                 </a>
@@ -153,23 +155,25 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-warmdark text-lg font-semibold">
+            <h3 className="text-warmdark text-sm font-semibold lg:text-lg">
               Get In Touch
             </h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-warmdark" />
-                <span className="text-sm text-gray-600">9211378406</span>
+                <span className="text-xs text-gray-600 lg:text-sm">
+                  9211378406
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-warmdark" />
-                <span className="text-sm text-gray-600">
+                <span className="text-xs text-gray-600 lg:text-sm">
                   luxuriagifting@gmail.com
                 </span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-warmdark mt-0.5" />
-                <span className="text-sm text-gray-600">
+                <span className="text-xs text-gray-600 lg:text-sm">
                   728 , jawahar colony
                   <br />
                   faridabad , Haryana 121005
@@ -198,44 +202,6 @@ const Footer = () => {
                   Subscribe
                 </Button>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-200 bg-white/50">
-        <div className="container mx-auto max-w-7xl px-4 py-6">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <div className="flex items-center gap-2 text-sm text-gray-600">
-              <span>© 2024 Luxuria Pvt Ltd. All Rights Reserved</span>
-              <span className="hidden md:inline">•</span>
-              <span className="flex items-center gap-1">
-                Made with <Heart size={14} className="text-red-500" /> in India
-              </span>
-            </div>
-
-            <div className="flex items-center gap-6 text-sm">
-              <a
-                href="#"
-                className="hover:text-warmdark text-gray-600 transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <span className="text-gray-300">•</span>
-              <a
-                href="#"
-                className="hover:text-warmdark text-gray-600 transition-colors"
-              >
-                Terms of Service
-              </a>
-              <span className="text-gray-300">•</span>
-              <a
-                href="#"
-                className="hover:text-warmdark text-gray-600 transition-colors"
-              >
-                Cookie Policy
-              </a>
             </div>
           </div>
         </div>

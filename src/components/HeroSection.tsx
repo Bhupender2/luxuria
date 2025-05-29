@@ -21,11 +21,13 @@ const HeroSection = () => {
               </div>
 
               <h1 className="text-warmdark leading-tight font-bold">
-                <div className="mb-2 text-5xl lg:text-6xl">Curated Luxury</div>
-                <div className="mb-2 text-5xl lg:text-6xl">
+                <div className="mb-2 text-4xl md:text-5xl lg:text-6xl">
+                  Curated Luxury
+                </div>
+                <div className="mb-2 text-4xl md:text-5xl lg:text-6xl">
                   Gifts<span className="text-amber-600">,</span> Delivered
                 </div>
-                <div className="mb-6 text-5xl lg:text-6xl">
+                <div className="mb-6 text-4xl md:text-5xl lg:text-6xl">
                   with <span className="text-rose-600 italic">Love</span>
                 </div>
               </h1>
