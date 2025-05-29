@@ -6,10 +6,16 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +49,6 @@ export default function Header() {
         </div>
 
         {/* mobile version */}
-
         <div className="flex items-center justify-between py-4 md:hidden">
           <Image
             src="/Logo.png"
@@ -58,26 +63,58 @@ export default function Header() {
                 <Menu size={24} className="text-warmdark" />
               </button>
             </SheetTrigger>
-            <SheetContent className="bg-white/90 backdrop-blur-md" side="right">
-              <NavigationMenu>
-                <NavigationMenuList className="flex flex-col items-start space-y-2">
-                  <NavigationMenuItem>
-                    <NavigationMenuLink className="hover:text-warmdark cursor-pointer text-gray-700 transition-colors duration-200 hover:font-bold">
-                      Home
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                  <NavigationMenuItem>
-                    <NavigationMenuLink className="hover:text-warmdark cursor-pointer text-gray-700 transition-colors duration-200 hover:font-bold">
-                      Shop
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                  <NavigationMenuItem>
-                    <NavigationMenuLink className="hover:text-warmdark cursor-pointer text-gray-700 transition-colors duration-200 hover:font-bold">
-                      Contact
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                </NavigationMenuList>
-              </NavigationMenu>
+            <SheetContent
+              className="bg-white/90 p-0 backdrop-blur-md [&>button]:hidden"
+              side="left"
+            >
+              {/* Custom header with your own close button */}
+              <div className="flex items-center justify-between border-b border-gray-100 p-6">
+                <Image
+                  src="/Logo.png"
+                  className="h-10"
+                  alt="luxuiria"
+                  width={100}
+                  height={100}
+                />
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="rounded-full p-1 transition-colors hover:bg-gray-100"
+                >
+                  <X size={20} className="text-gray-600" />
+                </button>
+              </div>
+
+              {/* Navigation items - positioned right after header */}
+              <div className="px-6">
+                <NavigationMenu>
+                  <NavigationMenuList className="flex w-full flex-col items-start">
+                    <NavigationMenuItem className="w-full">
+                      <NavigationMenuLink
+                        className="hover:text-warmdark block w-full cursor-pointer rounded-lg p-3 text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:font-bold"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Home
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className="w-full">
+                      <NavigationMenuLink
+                        className="hover:text-warmdark block w-full cursor-pointer rounded-lg p-3 text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:font-bold"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Shop
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className="w-full">
+                      <NavigationMenuLink
+                        className="hover:text-warmdark block w-full cursor-pointer rounded-lg p-3 text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:font-bold"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Contact
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
+              </div>
             </SheetContent>
           </Sheet>
         </div>
