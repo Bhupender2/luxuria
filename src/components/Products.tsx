@@ -9,8 +9,18 @@ import {
 import Image from "next/image";
 import { Button } from "./ui/button";
 
+interface Product {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  originalPrice: string;
+  image: string;
+  alt: string;
+}
+
 const Products = () => {
-  const products = [
+  const products: Product[] = [
     {
       id: 1,
       name: "Elegant Table Centerpiece Set",
