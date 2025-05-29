@@ -6,7 +6,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Contact, Home, Menu, ShoppingBag, X } from "lucide-react";
+import { Home, Menu, Phone, ShoppingBag, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -87,7 +87,7 @@ export default function Header() {
                         className="hover:text-warmdark block w-full cursor-pointer rounded-lg p-3 text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:font-bold"
                         onClick={() => setIsOpen(false)}
                       >
-                        <div className="flex items-center justify-around gap-4">
+                        <div className="flex items-center justify-start gap-4">
                           {" "}
                           <Home /> <span>Home</span>
                         </div>
@@ -98,7 +98,7 @@ export default function Header() {
                         className="hover:text-warmdark block w-full cursor-pointer rounded-lg p-3 text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:font-bold"
                         onClick={() => setIsOpen(false)}
                       >
-                        <div className="flex items-center justify-around gap-4">
+                        <div className="flex items-center justify-start gap-4">
                           {" "}
                           <ShoppingBag /> <span>Shop</span>
                         </div>
@@ -109,9 +109,9 @@ export default function Header() {
                         className="hover:text-warmdark block w-full cursor-pointer rounded-lg p-3 text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:font-bold"
                         onClick={() => setIsOpen(false)}
                       >
-                        <div className="flex items-center justify-around gap-4">
+                        <div className="flex items-center justify-start gap-4">
                           {" "}
-                          <Contact /> <span>Contact</span>
+                          <Phone /> <span>Contact</span>
                         </div>
                       </NavigationMenuLink>
                     </NavigationMenuItem>
