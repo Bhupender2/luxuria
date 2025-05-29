@@ -15,7 +15,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="border-b font-semibold shadow-xl">
-      <div className="container mx-auto max-w-6xl px-4 py-2">
+      <div className="container mx-auto max-w-7xl px-4 py-2">
         {/* desktop version */}
         <div className="hidden justify-between md:flex">
           <div>
