@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="container mx-auto flex max-w-6xl justify-between">
       <div className="flex items-center justify-center">
-        <div className="text-warmdark text-5xl font-bold">
+        <div className="text-warmdark text-6xl font-bold">
           <div>Curated Luxury</div>
           <div>Gifts , Delivered</div>
           <div>with Love</div>
